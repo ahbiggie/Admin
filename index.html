@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Student</title>
+
+    <!-- LINKS  -->
+    <link rel="stylesheet" href="./css/style1.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="header">
+        <h2>Register Student</h2>
+      </div>
+
+      <form action="" class="form" id="form">
+        <div class="form-control">
+          <label for="firstName">Firstname</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="Firstname"
+          />
+        </div>
+        <div class="form-control">
+          <label for="LastName">Lastname</label>
+          <input
+            type="text"
+            name="LastName"
+            id="LastName"
+            placeholder="LastName"
+          />
+        </div>
+        <div class="form-control">
+          <label for="Middlename">Middlename</label>
+          <input
+            type="text"
+            name="Middlename"
+            id="Middlename"
+            placeholder="Middlename(Optional)"
+          />
+        </div>
+        <div class="form-control">
+          <label for="Session">Session</label>
+          <input
+            type="text"
+            name="Session"
+            id="Session"
+            placeholder="2018/2019"
+            required
+          />
+        </div>
+        <div class="form-control">
+          <label for="term">Term</label>
+          <input
+            type="text"
+            name="term"
+            id="term"
+            placeholder="First Term"
+            required
+          />
+        </div>
+        <div class="form-control">
+          <label for="class">Class</label>
+          <input
+            type="text"
+            name="class"
+            id=""
+            placeholder="J.S.S II"
+            required
+          />
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Dawahfrontiers@example.com"
+            required
+          />
+        </div>
+        <div class="form-control radio-btn">
+            <label for="Gender">Gender:</label>
+            <input list="Gender" name="Gender">
+            <datalist id="Gender">
+              <option value="Female">
+              <option value="Male">
+            </datalist>
+        </div>
+        <div class="form-control">
+          <label for="phone">Phone</label>
+          <input type="tel" name="phone" id="phone" required />
+        </div>
+        <div class="form-control">
+          <label for="DOB">Date of Birth</label>
+          <input type="date" name="DOB" id="DOB" />
+        </div>
+        <div class="form-control">
+            <label for="hostel">Hostel</label>
+            <input list="hostel" name="hostel">
+            <datalist id="hostel">
+              <option value="Yes">
+              <option value="No">
+            </datalist>
+        </div>
+        <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <button type="submit" class="form-btn">Add Student</button>
+      </form>
+    </div>
+  </body>
+</html>
