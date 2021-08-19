@@ -55,23 +55,30 @@
         </div>
         <div class="form-control">
           <label for="term">Term</label>
-          <input
-            type="text"
-            name="term"
-            id="term"
-            placeholder="First Term"
-            required
-          />
+          <select name="term" id="term" required>
+            <option value="" selected disabled>--Select Term--</option>
+            <option value="First Term">First Term</option>
+            <option value="Second Term">Second Term</option>
+            <option value="Third Term">Third Term</option>
+          </select>
         </div>
         <div class="form-control">
           <label for="class">Class</label>
-          <input
-            type="text"
-            name="class"
-            id=""
-            placeholder="J.S.S II"
-            required
-          />
+            <select name="class" id="class" required>
+              <option value="" selected disabled>--Choose Class--</option>
+              <option value="primary 1">Primary 1</option>
+              <option value="primary 2">Primary 2</option>
+              <option value="primary 3">Primary 3</option>
+              <option value="primary 4">Primay 4</option>
+              <option value="primary 5">Primary 5</option>
+              <option value="primary 6">Primary 6</option>
+              <option value="J.S.S I">J.S.S I</option>
+              <option value="J.S.S 2">J.S.S 2</option>
+              <option value="J.S.S 3">J.S.S 3</option>
+              <option value="S.S.S I">S.S.S I</option>
+              <option value="S.S.S II">S.S.S II</option>
+              <option value="S.S.S III">S.S.S III</option>
+              </select>
         </div>
         <div class="form-control">
           <label for="email">Email</label>
@@ -83,13 +90,13 @@
             required
           />
         </div>
-        <div class="form-control radio-btn">
+        <div class="form-control">
             <label for="Gender">Gender:</label>
-            <input list="Gender" name="Gender">
-            <datalist id="Gender">
-              <option value="Female">
-              <option value="Male">
-            </datalist>
+            <select name="Gender" id="Gender">
+              <option value="" selected disabled>--choose Gender--</option>
+              <option value="Female">Female</option>
+              <option value="Male">Male</option>
+              </select>
         </div>
         <div class="form-control">
           <label for="phone">Phone</label>
@@ -101,11 +108,12 @@
         </div>
         <div class="form-control">
             <label for="hostel">Hostel</label>
-            <input list="hostel" name="hostel">
-            <datalist id="hostel">
-              <option value="Yes">
-              <option value="No">
-            </datalist>
+            <select name="hostel" id="hostel">
+              <option value="" selected disabled>--Please choose an option--</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+            
         </div>
         <div class="form-control">
             <label for="password">Password</label>
@@ -115,6 +123,89 @@
             <label for="c-password">Confirm Password</label>
             <input type="password" name="password" id="c-password">
         </div>
+        <div class="form-control">
+          <label for="adm-number">Admission Number</label>
+          <input type="text" name="adm-num" id="adm-num" disabled value="">
+        </div>
+        <div>
+       <h4>Other Information</h4>
+        </div>
+ <hr>
+        <div class="form-control">
+<label for="state">State of Origin</label>
+<select name="state" id="state">
+    <option value="" selected disabled>--Please choose a state--</option>
+    <option value="Abia">Abia</option>
+    <option value="Adamawa">Adamawa</option>
+    <option value="Akwa Ibom">Akwa Ibom</option>
+    <option value="Anambra">Anambra</option>
+    <option value="Bauchi">Bauchi</option>
+    <option value="Benue">Benue</option>
+    <option value="Borno">Borno</option>
+    <option value="Cross River">Cross River</option>
+    <option value="Delta">Delta</option>
+    <option value="Ebonyi">Ebonyi</option>
+    <option value="Edo">Edo</option>
+    <option value="Ekiti">Ekiti</option>
+    <option value="Enugu">Enugu</option>
+    <option value="Gombe">Gombe</option>
+    <option value="Imo">Imo</option>
+    <option value="Jigawa">Jigawa</option>
+    <option value="Kaduna">Kaduna</option>
+    <option value="Kano">Kano</option>
+    <option value="Kastina">Kastina</option>
+    <option value="Kebbi">Kebbi</option>
+    <option value="Kogi">Kogi</option>
+    <option value="Kwara">Kwara</option>
+    <option value="Lagos">Lagos</option>
+    <option value="Nasarawa">Nasarawa</option>
+    <option value="Niger">Niger</option>
+    <option value="Ogun">Ogun</option>
+    <option value="Ondo">Ondo</option>
+    <option value="Osun">Osun</option>
+    <option value="Oyo">Oyo</option>
+    <option value="Plateau">Plaueau</option>
+    <option value="Rivers">Rivers</option>
+    <option value="Sokoto">Sokoto</option>
+    <option value="Taraba">Taraba</option>
+    <option value="Yobe">Yobe</option>
+    <option value="Zamfara">Zamfara</option>
+    <option value="FCT">FCT</option>
+</select>
+        </div>
+        
+        <div class="form-control">
+          <label for="Passport">Passport</label>
+<input type="file" name="passport" id="Passport">
+        </div>
+<div class="form-control">
+  <label for="medical">Medical Condition:</label>
+
+<textarea id="medic" name="medic"
+          rows="5" cols="33" placeholder="Any pre-existing ailment">
+</textarea>
+</div>
+<div>
+  <h4>Guardian Information</h4>
+  <hr>
+</div>
+<div class="form-control">
+  <label for="Guardian-tel">Guardian's Phone</label>
+  <input type="Tel" name="Guardian-tel" id="Guardian-tel" placeholder="081-2222-432">
+</div>
+<div class="form-control">
+  <label for="Guardian-Fname">Guardian's First Name</label>
+  <input type="text" name="Guardian-Fname" id="Guardian-Fname">
+</div>
+<div class="form-control">
+  <label for="Guardian-Lname">Guardian's Last Name</label>
+  <input type="text" name="Guardian-Lname" id="Guardian-Lname">
+</div>
+<div class="form-control">
+  <label for="Occupation">Occupation</label>
+  <input type="text" name="Occupation" id="Occupation">
+</div>
+
         <button type="submit" class="form-btn">Add Student</button>
       </form>
     </div>
